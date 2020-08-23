@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/formstyle.css" />
+  </head>
+  <body>
+    <div class="Hero">
+      <div class="form-box">
+        <div
+          style="
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            color: red;
+          "
+        >
+          <%= msg %>
+        </div>
+
+        <!-- Login -->
+        <form action="/" method="POST" id="login" class="input_group1">
+          <input
+            type="text"
+            class="input-field"
+            name="username"
+            placeholder="User Username"
+            required
+          />
+          <input
+            type="Password"
+            class="input-field"
+            name="password"
+            placeholder="Enter Your Password"
+            required
+          /><br /><br />
+
+          <button type="Submit" value="login" class="submit-btn">Login</button
+          ><br />
+          <p>
+            If you don't have account<a href="/signup"> Create new account</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
